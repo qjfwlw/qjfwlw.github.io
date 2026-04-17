@@ -1,8 +1,8 @@
 ---
-title: "오늘의 배움: Jekyll 블로그 구축"
-date: 2026-03-08 00:00:00 +0900
-categories: [TIL, Blog]
-tags: [jekyll, github-pages]
+title: "중간고사"
+date: 2026-04-17 00:00:00 +0000
+categories: [TIL, 시험]
+tags: [시험]
 ---
 
 # 중간고사 
