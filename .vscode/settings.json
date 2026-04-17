@@ -1,30 +1,58 @@
 {
-  // Prettier
+  // ==========================================
+  // 기본 에디터 & 포매터 설정
+  // ==========================================
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
-  // Shopify Liquid
+
   "files.associations": {
     "*.html": "liquid"
   },
+
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  // Formatter
-  "[html][liquid]": {
+  "[html]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode"
+  },
+  "[liquid]": {
     "editor.defaultFormatter": "Shopify.theme-check-vscode"
   },
   "[shellscript]": {
     "editor.defaultFormatter": "mkhl.shfmt"
   },
-  // Disable vscode built-in stylelint
+
+  // ==========================================
+  // Stylelint 설정
+  // ==========================================
   "css.validate": false,
   "scss.validate": false,
   "less.validate": false,
-  // Stylint extension settings
   "stylelint.snippet": ["css", "scss"],
   "stylelint.validate": ["css", "scss"],
-  // Run tasks in macOS
+
+  // ==========================================
+  // 터미널 설정
+  // ==========================================
   "terminal.integrated.profiles.osx": {
     "zsh": { "path": "/bin/zsh", "args": ["-l", "-i"] }
+  },
+
+  // ==========================================
+  // 📸 이미지 붙여넣기 완벽 설정 (Jekyll Chirpy)
+  // ==========================================
+  
+  // 1. Paste Image 확장 프로그램용 (단축키: Ctrl + Alt + V) - 🌟 블로그용 강력 추천
+  "pasteImage.path": "${currentFileDir}/../../assets/img/posts",
+  "pasteImage.basePath": "${currentFileDir}/../../",
+  "pasteImage.forceUnixStyleSeparator": true,
+  "pasteImage.insertPattern": "![image](/assets/img/posts/${imageFileName})",
+  
+  // 💥 [핵심 추가] 글 제목으로 서브 폴더 만드는 기능 끄기
+  "pasteImage.showFilePathConfirmInputBox": false, 
+
+  // 2. VS Code 기본 붙여넣기용 (단축키: Ctrl + V) - 보험용
+  "markdown.copyFiles.destination": {
+    "**/*": "/assets/img/posts/"
   }
 }
