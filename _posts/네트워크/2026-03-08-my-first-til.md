@@ -3,6 +3,7 @@ title: "오늘의 배움: 네트워크 관리사 2 급"
 date: 2026-03-08 12:00:00 +0900
 categories: [TIL, network]
 tags: [네트워크 관리사, 자격증]
+permalink: /posts/network-my-first-til/
 ---
 
 # 네트워크 일반

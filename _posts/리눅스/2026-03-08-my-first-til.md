@@ -3,6 +3,7 @@ title: "오늘의 배움: Jekyll 블로그 구축"
 date: 2026-03-08 12:00:00 +0900
 categories: [TIL, Blog]
 tags: [jekyll, github-pages]
+permalink: /posts/linux-my-first-til/
 ---
 
 ## 오늘 배운 내용
